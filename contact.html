@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bean & Bloom</title>
+  <meta name="description" content="Support, inquiries, and partnerships with Bean & Bloom." />
+  <meta property="og:title" content="Bean & Bloom Contact" />
+  <meta property="og:description" content="We'd love to hear from you." />
+  <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=&family=&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#4B2E28', secondary: '#2E6B4A', accent: '#D97792' } } }
+    }
+  </script>
+  <style>
+    .font-heading { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .font-body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="font-body">
+  <a href="#main" class="sr-only focus:not-sr-only absolute -top-10 left-0 right-0 bg-primary text-white p-2 text-center">Skip to content</a>
+  <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2"><span class="text-2xl font-bold text-neutral-900">Bean & Bloom</span><span class="text-xs text-neutral-600">Coffee</span></div>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-8">
+        <a href="/home.html" class="text-neutral-700 hover:text-primary">Home</a>
+        <a href="/menu.html" class="text-neutral-700 hover:text-primary">Menu</a>
+        <a href="/locations.html" class="text-neutral-700 hover:text-primary">Locations</a>
+        <a href="/order.html" class="text-neutral-700 hover:text-primary">Order Online</a>
+        <a href="/about.html" class="text-neutral-700 hover:text-primary">About</a>
+        <a href="/loyalty.html" class="text-neutral-700 hover:text-primary">Loyalty</a>
+        <a href="/contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+      </nav>
+      <a href="/contact.html" class="hidden md:inline-block bg-primary text-white px-4 py-2 rounded-full">Get in touch</a>
+    </div>
+  </header>
+
+  <main id="main" role="main" class="bg-neutral-50">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="https://pixabay.com/get/g70199254270b1791569ed0515451dccffea51cbc61cafde635e5bd6bf66b0cb374acacc24a9f940220d9c3cc6416a2e38bf8a5c6db5c7e20952c7b7fe9efe01c_640.jpg" alt="Staff assisting a customer at the counter" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-heading text-white mb-4">Need help or a partnership idea?</h1>
+        <p class="text-xl md:text-2xl text-white/90 mb-6">We’re here to assist with questions, collaborations, or ideas.</p>
+        <a href="/contact.html" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300">Contact us</a>
+      </div>
+    </section>
+
+    <!-- Contact form & FAQ -->
+    <section class="py-12 md:py-24" aria-label="Contact form and FAQ" id="contact_and_faq">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+        <form class="bg-white p-6 rounded-2xl shadow-md" aria-label="Contact form">
+          <h3 class="font-heading text-xl mb-4">Send us a message</h3>
+          <div class="mb-4">
+            <label class="block text-sm font-semibold mb-1" for="name">Full Name</label>
+            <input id="name" name="name" type="text" required class="w-full border-2 border-neutral-300 rounded-lg p-3" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-sm font-semibold mb-1" for="email">Email</label>
+            <input id="email" name="email" type="email" required class="w-full border-2 border-neutral-300 rounded-lg p-3" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-sm font-semibold mb-1" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full border-2 border-neutral-300 rounded-lg p-3"></textarea>
+          </div>
+          <button type="submit" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full">Send message</button>
+        </form>
+        <aside class="bg-white p-6 rounded-2xl shadow-md" aria-label="FAQ">
+          <h3 class="font-heading text-xl mb-3">FAQs</h3>
+          <div class="text-sm text-neutral-700 space-y-3">
+            <div>
+              <strong>What payment methods do you accept?</strong>
+              <div>We accept major cards, mobile wallets, and cash.</div>
+            </div>
+            <div>
+              <strong>Do you host events?</strong>
+              <div>Yes. We host community events monthly—check our events page.</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Get in touch tips -->
+    <section class="py-12 md:py-24" aria-label="Get in touch" id="get_in_touch">
+      <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="p-4 rounded-xl bg-white shadow-md">
+          <div class="text-2xl mb-2">📞</div>
+          <h4 class="font-heading">Call us</h4>
+          <p class="text-sm text-neutral-700">Mon–Fri, 9am–5pm</p>
+          <a href="tel:+1234567890" class="text-accent hover:underline">Call</a>
+        </div>
+        <div class="p-4 rounded-xl bg-white shadow-md">
+          <div class="text-2xl mb-2">✉️</div>
+          <h4 class="font-heading">Email</h4>
+          <p class="text-sm text-neutral-700">hello@beanandbloom.co</p>
+          <a href="mailto:hello@beanandbloom.co" class="text-accent hover:underline">Email us</a>
+        </div>
+        <div class="p-4 rounded-xl bg-white shadow-md">
+          <div class="text-2xl mb-2">📍</div>
+          <h4 class="font-heading">Visit</h4>
+          <p class="text-sm text-neutral-700">Downtown store hours and directions</p>
+          <a href="/locations.html" class="text-accent hover:underline">Locations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-white py-8" aria-label="Footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold mb-2">Bean & Bloom</h4>
+        <p class="text-sm text-neutral-300">We respond within 24–48 hours.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Support</h5>
+        <p class="text-sm text-neutral-300">hello@beanandbloom.co</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Social</h5>
+        <div class="flex space-x-3 text-2xl">
+          <span aria-label="instagram">◎</span>
+          <span aria-label="twitter">✦</span>
+          <span aria-label="facebook">⬢</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('#mobileMenuBtn');
+      const panel = document.querySelector('#mobileMenu');
+      if(btn && panel){ btn.addEventListener('click', ()=>{ panel.classList.toggle('hidden'); }); }
+    })();
+  </script>
+</body>
+</html>
