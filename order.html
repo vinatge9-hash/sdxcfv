@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online — Bean & Bloom</title>
+  <meta name="description" content="Order ahead for pickup or delivery. Earn loyalty points with every order." />
+  <meta property="og:title" content="Order Online — Bean & Bloom" />
+  <meta property="og:description" content="Fast, reliable online ordering with loyalty enrollment." />
+  <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=&family=&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#4B2E28', secondary: '#2E6B4A', accent: '#D97792' } } }
+    }
+  </script>
+  <style>
+    .font-heading { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .font-body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="font-body">
+  <a href="#main" class="sr-only focus:not-sr-only absolute -top-10 left-0 right-0 bg-primary text-white p-2 text-center">Skip to content</a>
+  <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2"><span class="text-2xl font-bold text-neutral-900">Bean & Bloom</span><span class="text-xs text-neutral-600">Coffee</span></div>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-8">
+        <a href="/home.html" class="text-neutral-700 hover:text-primary">Home</a>
+        <a href="/menu.html" class="text-neutral-700 hover:text-primary">Menu</a>
+        <a href="/locations.html" class="text-neutral-700 hover:text-primary">Locations</a>
+        <a href="/order.html" class="text-neutral-700 hover:text-primary">Order Online</a>
+        <a href="/about.html" class="text-neutral-700 hover:text-primary">About</a>
+        <a href="/loyalty.html" class="text-neutral-700 hover:text-primary">Loyalty</a>
+        <a href="/contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+      </nav>
+      <a href="/order.html" class="hidden md:inline-block bg-primary text-white px-4 py-2 rounded-full hover:shadow-xl transition-all duration-300">Order Online</a>
+      <button aria-label="Open mobile menu" class="md:hidden" id="mobileMenuBtn5">☰</button>
+    </div>
+    <div id="mobileMenu5" class="hidden md:hidden bg-white border-t border-neutral-200">
+      <a href="/home.html" class="block px-4 py-2">Home</a>
+      <a href="/menu.html" class="block px-4 py-2">Menu</a>
+      <a href="/locations.html" class="block px-4 py-2">Locations</a>
+      <a href="/order.html" class="block px-4 py-2">Order Online</a>
+      <a href="/about.html" class="block px-4 py-2">About</a>
+      <a href="/loyalty.html" class="block px-4 py-2">Loyalty</a>
+      <a href="/contact.html" class="block px-4 py-2">Contact</a>
+    </div>
+  </header>
+
+  <main id="main" role="main" class="bg-neutral-50">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="https://pixabay.com/get/g486da0025122f14bb92bb361ea9d4a2ca136a9433e403ab9969a8ecef3442351160ce72ebabedb9cf70cce6a12de516dd5855cf20cc2ba9bb4c62558636006ca_640.jpg" alt="Barista preparing a pour-over" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-heading text-white mb-4">Order Ahead, Pickup or Deliver</h1>
+        <p class="text-xl md:text-2xl text-white/90 mb-6">Skip the line with fast, reliable online ordering and loyalty enrollment.</p>
+        <a href="/order.html" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300">Order Online</a>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="py-12 md:py-24" aria-label="How it works" id="how_it_works">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-heading mb-6">How it works</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl shadow-md"> <div class="font-heading">1</div> <div class="font-heading">Choose & Customize</div> <p class="text-sm text-neutral-700">Select items, customize extras, add to cart.</p> </div>
+          <div class="p-6 rounded-2xl shadow-md"> <div class="font-heading">2</div> <div class="font-heading">Checkout & Pay</div> <p class="text-sm text-neutral-700">Secure payment and order confirmation.</p> </div>
+          <div class="p-6 rounded-2xl shadow-md"> <div class="font-heading">3</div> <div class="font-heading">Pickup / Delivery</div> <p class="text-sm text-neutral-700">Pickup at store or delivery to your door.</p> </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery & Pickup Cards -->
+    <section class="py-12 md:py-24" aria-label="Delivery & Pickup" id="delivery">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-2xl shadow-md bg-white">
+          <div class="text-xl font-heading mb-2">Delivery</div>
+          <p class="text-sm text-neutral-700">Neighborhood delivery within 3 miles.</p>
+          <a href="/order.html#delivery" class="text-accent mt-2 inline-block hover:underline">Learn more</a>
+        </div>
+        <div class="p-6 rounded-2xl shadow-md bg-white">
+          <div class="text-xl font-heading mb-2">Pickup</div>
+          <p class="text-sm text-neutral-700">Order ahead for convenient pickup.</p>
+          <a href="/order.html#pickup" class="text-accent mt-2 inline-block hover:underline">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loyalty CTA -->
+    <section class="py-12 md:py-24 bg-neutral-100" aria-label="Loyalty promo">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-heading mb-4">Join our Rewards</h2>
+        <p class="text-neutral-700 mb-6">Earn points with every order, unlock promotions and events.</p>
+        <a href="/loyalty.html" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300">Join loyalty</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-white py-8" aria-label="Footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold mb-2">Bean & Bloom</h4>
+        <p class="text-sm text-neutral-300">Order ahead, pickup or delivery options available.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Support</h5>
+        <p class="text-sm text-neutral-300">hello@beanandbloom.co</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Locations</h5>
+        <p class="text-sm text-neutral-300">Downtown • Campus North</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('mobileMenuBtn5');
+      const panel = document.getElementById('mobileMenu5');
+      if(btn && panel){ btn.addEventListener('click', ()=>{ panel.classList.toggle('hidden'); }); }
+    })();
+  </script>
+</body>
+</html>
