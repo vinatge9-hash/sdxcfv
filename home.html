@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean & Bloom Coffee — Home</title>
+  <meta name="description" content="Bean & Bloom Coffee: a premium, welcoming space for locals, students, professionals and visitors to enjoy exceptional coffee and community." />
+  <meta property="og:title" content="Bean & Bloom Coffee" />
+  <meta property="og:description" content="Crafting moments with every cup in a welcoming space." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555216517-f440fefcec76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxCZWFuJTIwJTI2JTIwQmxvb20lMjBsb2dvfGVufDB8MHx8fDE3NjExMzY2OTh8MA&ixlib=rb-4.1.0&q=80&w=1080" />
+
+  <!-- Fonts (placeholders per design spec) -->
+  <link href="https://fonts.googleapis.com/css2?family=&family=&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4B2E28',
+            secondary: '#2E6B4A',
+            accent: '#D97792'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Design system helpers */
+    .font-heading { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .font-body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="font-body text-neutral-900">
+  <!-- Skip to content -->
+  <a href="#main" class="sr-only focus:not-sr-only absolute -top-10 left-0 right-0 bg-primary text-white p-2 text-center">Skip to content</a>
+
+  <!-- Header / Navigation (sticky) -->
+  <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl font-bold text-neutral-900">Bean & Bloom</span>
+        <span class="text-xs text-neutral-600 tracking-wide">Coffee</span>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-8">
+        <a href="/home.html" class="text-neutral-700 hover:text-primary">Home</a>
+        <a href="/menu.html" class="text-neutral-700 hover:text-primary">Menu</a>
+        <a href="/locations.html" class="text-neutral-700 hover:text-primary">Locations</a>
+        <a href="/order.html" class="text-neutral-700 hover:text-primary">Order Online</a>
+        <a href="/about.html" class="text-neutral-700 hover:text-primary">About</a>
+        <a href="/loyalty.html" class="text-neutral-700 hover:text-primary">Loyalty</a>
+        <a href="/contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+      </nav>
+      <a href="/order.html" class="hidden md:inline-block bg-primary text-white px-4 py-2 rounded-full hover:shadow-xl transition-all duration-300">Order Now</a>
+      <!-- Mobile menu button (no heavy JS needed for this mock) -->
+      <button aria-label="Open mobile menu" class="md:hidden text-neutral-700" id="mobileMenuBtn">☰</button>
+    </div>
+    <!-- Mobile menu (toggle with simple JS) -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-neutral-200">
+      <a href="/home.html" class="block px-4 py-2">Home</a>
+      <a href="/menu.html" class="block px-4 py-2">Menu</a>
+      <a href="/locations.html" class="block px-4 py-2">Locations</a>
+      <a href="/order.html" class="block px-4 py-2">Order Online</a>
+      <a href="/about.html" class="block px-4 py-2">About</a>
+      <a href="/loyalty.html" class="block px-4 py-2">Loyalty</a>
+      <a href="/contact.html" class="block px-4 py-2">Contact</a>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.pexels.com/photos/3745526/pexels-photo-3745526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Bean & Bloom cafe interior" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-heading text-white mb-4">Bean & Bloom: Crafting moments with every cup</h1>
+        <p class="text-xl md:text-2xl text-white/90 mb-6 max-w-2xl">A welcoming space for locals, students, professionals, and visitors who crave exceptional coffee and intentionally slow moments.</p>
+        <a href="/order.html" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-10 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div class="mb-4 text-accent" aria-hidden="true">🍃</div>
+            <h3 class="text-xl font-heading mb-2">Quality Coffee</h3>
+            <p class="text-sm text-neutral-700">Small-batch roasts, ethically sourced beans, and precision brewing.</p>
+            <a href="/menu.html" class="inline-block mt-3 text-accent hover:underline">Learn more</a>
+          </article>
+          <article class="p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div class="mb-4 text-accent" aria-hidden="true">♻️</div>
+            <h3 class="text-xl font-heading mb-2">Sustainable Space</h3>
+            <p class="text-sm text-neutral-700">Waste-reducing practices, compostable materials, and green rituals.</p>
+            <a href="/about.html#sustainability" class="inline-block mt-3 text-accent hover:underline">Our values</a>
+          </article>
+          <article class="p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div class="mb-4 text-accent" aria-hidden="true">🤝</div>
+            <h3 class="text-xl font-heading mb-2">Community Hub</h3>
+            <p class="text-sm text-neutral-700">Study corners, groups, and events that bring people together.</p>
+            <a href="/loyalty.html#upcoming_events" class="inline-block mt-3 text-accent hover:underline">See events</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="py-16 md:py-24" aria-label="Menu preview">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-heading mb-6">Menu Preview</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+            <img src="https://pixabay.com/get/g49f060121bb8c2247865cf3471fe8ba68d032445f81accdb40ae3de554e2672554d38c48d87989d48dc1c526b1bbb8bd5d6786ad2818c624bc748967f72d3c9a_640.jpg" alt="Vanilla Bean Latte" class="h-40 w-full object-cover rounded-xl mb-3" />
+            <h3 class="text-lg font-heading mb-1">Vanilla Bean Latte</h3>
+            <p class="text-sm text-neutral-700">Silky latte with vanilla bean and foam art.</p>
+            <a href="/menu.html#latte" class="mt-auto text-accent hover:underline">View details</a>
+          </article>
+          <article class="p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+            <img src="https://images.pexels.com/photos/6957051/pexels-photo-6957051.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Almond Croissant" class="h-40 w-full object-cover rounded-xl mb-3" />
+            <h3 class="text-lg font-heading mb-1">Almond Croissant</h3>
+            <p class="text-sm text-neutral-700">Buttery croissant with almond cream.</p>
+            <a href="/menu.html#pastries" class="mt-auto text-accent hover:underline">View details</a>
+          </article>
+          <article class="p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+            <img src="https://images.unsplash.com/photo-1547965010-3189f704431b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxIZXJiYWwlMjBUZWElMjBTZWxlY3Rpb258ZW58MHwwfHx8MTc2MTEzNjcwMnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Herbal Tea Selection" class="h-40 w-full object-cover rounded-xl mb-3" />
+            <h3 class="text-lg font-heading mb-1">Herbal Tea Selection</h3>
+            <p class="text-sm text-neutral-700">Seasonal blends and caffeine-free options.</p>
+            <a href="/menu.html#tea" class="mt-auto text-accent hover:underline">View details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="py-16 md:py-24" aria-label="Testimonials">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-heading mb-6">What people are saying</h2>
+        <div class="relative overflow-hidden rounded-2xl shadow-lg">
+          <div id="home-testimonials-track" class="flex transition-transform duration-500">
+            <div class="w-full p-6 bg-white text-neutral-900">
+              <p class="text-xl italic">"The latte here is the creamiest I’ve ever tasted."</p>
+              <p class="mt-2 font-semibold">Alex P.</p>
+              <p class="text-sm text-neutral-600">Designer</p>
+            </div>
+            <div class="w-full p-6 bg-white text-neutral-900">
+              <p class="text-xl italic">"A welcoming space to study, meet friends, and recharge."</p>
+              <p class="mt-2 font-semibold">Priya N.</p>
+              <p class="text-sm text-neutral-600">Student</p>
+            </div>
+            <div class="w-full p-6 bg-white text-neutral-900">
+              <p class="text-xl italic">"Fantastic seasonal pastries and quick pickup."</p>
+              <p class="mt-2 font-semibold">Jordan M.</p>
+              <p class="text-sm text-neutral-600">Local commuter</p>
+            </div>
+          </div>
+          <button aria-label="Previous" class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-neutral-200" id="prevTestimonial">‹</button>
+          <button aria-label="Next" class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-neutral-200" id="nextTestimonial">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-white py-12" aria-label="Footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-semibold mb-2">Bean & Bloom</h4>
+        <p class="text-sm text-neutral-300">Crafting moments with every cup.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Locations</h5>
+        <p class="text-sm text-neutral-300">Downtown • Campus North</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Hours</h5>
+        <p class="text-sm text-neutral-300">Mon–Fri 7-7, Sat 8-6</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Stay connected</h5>
+        <div class="flex space-x-3 text-2xl">
+          <span aria-label="instagram"> eget </span>
+          <span aria-label="twitter"> x </span>
+          <span aria-label="facebook"> f </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tiny scripts: mobile menu toggle and testimonial carousel -->
+  <script>
+    // Mobile menu toggle
+    (function(){
+      const btn = document.getElementById('mobileMenuBtn');
+      const panel = document.getElementById('mobileMenu');
+      if(btn && panel){
+        btn.addEventListener('click', ()=>{
+          panel.classList.toggle('hidden');
+        });
+      }
+    })();
+
+    // Testimonials carousel (looping)
+    (function(){
+      const track = document.getElementById('home-testimonials-track');
+      const slides = 3; // hard-coded for this mock
+      let index = 0;
+      const update = ()=>{
+        if(!track) return;
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+      };
+      document.getElementById('prevTestimonial').addEventListener('click', ()=>{ index = (index - 1 + slides) % slides; update(); });
+      document.getElementById('nextTestimonial').addEventListener('click', ()=>{ index = (index + 1) % slides; update(); });
+      // Auto-rotate every 5 seconds
+      setInterval(()=>{ index = (index + 1) % slides; update(); }, 5000);
+    })();
+  </script>
+</body>
+</html>
