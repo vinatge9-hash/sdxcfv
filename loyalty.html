@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rewards & Events — Bean & Bloom</title>
+  <meta name="description" content="Loyalty rewards, promotions, and member events at Bean & Bloom." />
+  <meta property="og:title" content="Bean & Bloom Loyalty" />
+  <meta property="og:description" content="Loyalty that grows with you." />
+  <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=&family=&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#4B2E28', secondary: '#2E6B4A', accent: '#D97792' } } }
+    }
+  </script>
+  <style>
+    .font-heading { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .font-body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="font-body">
+  <a href="#main" class="sr-only focus:not-sr-only absolute -top-10 left-0 right-0 bg-primary text-white p-2 text-center">Skip to content</a>
+  <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2"><span class="text-2xl font-bold text-neutral-900">Bean & Bloom</span><span class="text-xs text-neutral-600">Coffee</span></div>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-8">
+        <a href="/home.html" class="text-neutral-700 hover:text-primary">Home</a>
+        <a href="/menu.html" class="text-neutral-700 hover:text-primary">Menu</a>
+        <a href="/locations.html" class="text-neutral-700 hover:text-primary">Locations</a>
+        <a href="/order.html" class="text-neutral-700 hover:text-primary">Order Online</a>
+        <a href="/about.html" class="text-neutral-700 hover:text-primary">About</a>
+        <a href="/loyalty.html" class="text-neutral-700 hover:text-primary">Loyalty</a>
+        <a href="/contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+      </nav>
+      <a href="/loyalty.html" class="hidden md:inline-block bg-primary text-white px-4 py-2 rounded-full">Explore the program</a>
+    </div>
+  </header>
+
+  <main id="main" role="main" class="bg-neutral-50">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.pexels.com/photos/7467965/pexels-photo-7467965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Barista with warmth" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-heading text-white mb-4">Rewards that feel like home</h1>
+        <p class="text-xl md:text-2xl text-white/90 mb-6">Loyalty, exclusive promotions, and member events crafted for our community.</p>
+        <a href="/loyalty.html#program_details" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300">Explore the program</a>
+      </div>
+    </section>
+
+    <!-- Program details -->
+    <section class="py-12 md:py-24" aria-label="Program details" id="program_details">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-heading mb-4">Loyalty that grows with you</h2>
+          <p class="text-neutral-700">Earn points for every purchase, unlock free drinks, and access members-only events.</p>
+          <ul class="mt-4 text-sm text-neutral-700 space-y-2">
+            <li>Free drink on your birthday</li>
+            <li>Double points on Wednesdays</li>
+            <li>Early access to seasonal promos</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h3 class="font-heading mb-2">Membership Tiers</h3>
+          <p class="text-sm text-neutral-700">Basic, Plus, and Elite with escalating perks.</p>
+          <a href="/loyalty.html" class="text-accent mt-2 inline-block hover:underline">See full terms</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming events -->
+    <section class="py-12 md:py-24" aria-label="Upcoming events" id="upcoming_events">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-heading mb-4">Upcoming events</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl shadow-md p-4 bg-white">
+            <img src="https://pixabay.com/get/gbadcd2226bbaf485ac3742c9e0fc41a2e06a165f321e0fa9664e4eb4a0e5250142fa84291e90c9877e38c08788257e54412b34aa7095a178e689b9e3071ffbf2_640.jpg" alt="Book club event" class="h-40 w-full object-cover rounded" />
+            <h4 class="mt-2 font-heading">Book Club Night</h4>
+            <p class="text-sm text-neutral-700">Nov 12, 2025</p>
+            <a href="/loyalty.html#upcoming_events" class="text-accent hover:underline">Details</a>
+          </div>
+          <div class="rounded-2xl shadow-md p-4 bg-white">
+            <img src="https://images.pexels.com/photos/5055185/pexels-photo-5055185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Brewing Techniques" class="h-40 w-full object-cover rounded" />
+            <h4 class="mt-2 font-heading">Brewing Techniques</h4>
+            <p class="text-sm text-neutral-700">Dec 3, 2025</p>
+            <a href="/loyalty.html#upcoming_events" class="text-accent hover:underline">Details</a>
+          </div>
+          <div class="rounded-2xl shadow-md p-4 bg-white">
+            <img src="https://images.pexels.com/photos/4937685/pexels-photo-4937685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Latte art workshop" class="h-40 w-full object-cover rounded" />
+            <h4 class="mt-2 font-heading">Latte Art Workshop</h4>
+            <p class="text-sm text-neutral-700">Jan 18, 2026</p>
+            <a href="/loyalty.html#upcoming_events" class="text-accent hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-white py-8" aria-label="Footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold mb-2">Bean & Bloom</h4>
+        <p class="text-sm text-neutral-300">Loyalty that grows with you.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Perks</h5>
+        <p class="text-sm text-neutral-300">Free drinks, double points, exclusive events.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Contact</h5>
+        <p class="text-sm text-neutral-300">hello@beanandbloom.co</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('#mobileMenuBtn5');
+      const panel = document.querySelector('#mobileMenu5');
+      if(btn && panel){ btn.addEventListener('click', ()=>{ panel.classList.toggle('hidden'); }); }
+    })();
+  </script>
+</body>
+</html>
